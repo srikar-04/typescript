@@ -18,8 +18,15 @@ function createCourse() {
 var createNewCourse = function () {
     return {};
 };
-function createNewUser(_a) {
-    var name = _a.name, email = _a.email, isActive = _a.isActive;
-    console.log(name);
+// this is like a type created by us. Insted of using string or boolean or number, we can define our own type and use it whereever we want it
+function createNewUser(user) {
+    return user;
 }
-createNewUser({ name: 'srikar', email: 'srikar@srikar.com', isActive: false });
+createNewUser({ name: 'srikar', email: 'srikar@srikar.com', isActive: true });
+// creating a user using the type "NewUser"
+var user = {
+    _id: '12345',
+    name: 'srikar',
+    email: 'srikar@srikar.com',
+    isActive: true,
+}; // see it is not giving me error even if i donot specify the card details
