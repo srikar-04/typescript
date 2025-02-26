@@ -51,5 +51,36 @@ const getMoreSearchProducts = <T>(products: T[]): T => {
     return products[3]
 }
 
+// working with "in" operator
+
+interface User {
+    name: string,
+    email: string
+}
+
+interface Admin {
+    name: string,
+    email: string,
+    isAdmin: boolean
+}
+
+function isAdminAccount(account: User | Admin) {
+    if("isAdmin" in account) {
+        return account.isAdmin
+    }
+}
+
+// instanceOf keyword
+function logValue(x: Date | string) {
+    // instance of is used whenever there is a scope to use new keyword, like "new Date()"
+    if(x instanceof Date) {
+        console.log(x.toUTCString());
+    } else {
+        x.toUpperCase()
+    }
+}
+
+
+
 export {}
 
