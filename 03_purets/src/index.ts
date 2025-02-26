@@ -12,7 +12,7 @@ class User {
     get getAppleEmail(): string {
         return `apple${this.email}`
     }
-    set setCourseCount(number: number) { // setters donot have any type annotations
+    set setCourseCount(number: number) { // setters donot have any return type annotations
         this.courseCount = number
     }
 }

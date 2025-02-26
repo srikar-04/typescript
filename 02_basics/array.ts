@@ -23,3 +23,5 @@ allUsers.push({
     email: 'srikar@srikar.com',
     isActive: true
 })
+
+export{}

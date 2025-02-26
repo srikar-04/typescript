@@ -24,3 +24,5 @@ let srikar: User = {
         return "free trail started"
     }
 }
+
+export {}

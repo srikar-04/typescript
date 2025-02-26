@@ -1,5 +1,5 @@
 abstract class TakePhoto {
-    // we cannot create instances of abstract class
+    // we cannot create instances of abstract class(using new keyword)
     // we can just declare function and must and the definition of that function should be written in the extended class
     constructor(
         public cameraMode: string,

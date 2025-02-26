@@ -52,7 +52,7 @@ let user: NewUser = {
 } // see it is not giving me error even if i donot specify the card details
 
 
-// this gives us error because this is readonly property
+// below one gives us error because this is readonly property
 // user._id = '097350365'  
 
 // COMBINING TYPES

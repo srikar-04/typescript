@@ -39,5 +39,17 @@ identityFour<Bootle>({
     price: 100
 })
 
+// GENERICS IN ARRAY AND ARROW FUNCTION
+
+function getSearchProducts<T>(products: T[]) : T {
+    return products[0]
+}
+
+// converting above function to arrow function
+
+const getMoreSearchProducts = <T>(products: T[]): T => {
+    return products[3]
+}
+
 export {}
 
