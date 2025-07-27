@@ -20,3 +20,23 @@ function testGreet_1 (message: string) {
 }
 
 testGreet_1('nyc')
+
+const nums_1 = [1, 2, 3, 4]
+
+const nums_2: Array<number> = [];
+
+nums_2.push(3)
+
+console.log(nums_1);
+
+
+type ObjectTesting = {
+    x: number,
+    y?: number
+}
+
+function pointTest(pt: ObjectTesting) {
+    console.log(`the points are ${pt.x} and ${pt.y}`);
+}
+
+pointTest({x: 5})
