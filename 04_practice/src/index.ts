@@ -177,3 +177,17 @@ class Dog extends Animal {
 }
 
 const dog = new Dog('animal', 4500, 'idk')
+
+abstract class TestClassRandom {
+    constructor(){
+
+    }
+
+    abstract printStatement():void 
+}
+
+class ImplementedTestClass extends TestClassRandom {
+    printStatement(): void {
+        console.log('this is the print function that is in the abstract calss. fucking initalized');   
+    }
+}
