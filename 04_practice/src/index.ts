@@ -66,3 +66,21 @@ const obj = {
     number: 0,
     string: 'hello world'
 }
+
+// This is a genric function which accepts arguments THAT CONTAINS THE PROPERTY "toLowerCase()" to it
+// otherwise it rejects the argument by showing error ---->>> see third call in console statement by un-commenting
+function find_properties<T extends {toLowerCase: () => string}>(argument: T) {
+    return argument.toLowerCase()
+}
+
+console.log(find_properties('HELLO WORLD'));
+console.log(find_properties('HELLO WORLD FROM SRIKAR'));
+// console.log(find_properties(121212))
+
+
+// using multiple generic parameters
+function merge<T, U>(arg_1:T, arg_2: U) {
+    return {...arg_1, ...arg_2}
+}
+
+console.log(merge({name: 'srikar'}, {age: 20}))
