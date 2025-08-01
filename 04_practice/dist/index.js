@@ -46,4 +46,13 @@ function merge(arg_1, arg_2) {
     return Object.assign(Object.assign({}, arg_1), arg_2);
 }
 console.log(merge({ name: 'srikar' }, { age: 20 }));
+let myVariable;
+myVariable = 20;
+myVariable = "srikar";
+let myArray;
+let myArray_2;
+myArray = [1, 2, 3, 4];
+myArray = ['1', '2', '3', '4'];
+myArray = ['1', '2', 3, 4];
+// myArray_2 = ['1', '2', 3, 4]
 //# sourceMappingURL=index.js.map

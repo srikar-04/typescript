@@ -84,3 +84,19 @@ function merge<T, U>(arg_1:T, arg_2: U) {
 }
 
 console.log(merge({name: 'srikar'}, {age: 20}))
+
+
+let myVariable: number | string;
+
+myVariable = 20
+myVariable = "srikar"
+
+let myArray: (number | string)[];
+
+let myArray_2: number[] | string[]
+
+myArray = [1, 2, 3, 4]
+myArray = ['1', '2', '3', '4']
+myArray = ['1', '2', 3, 4]
+
+// myArray_2 = ['1', '2', 3, 4]
