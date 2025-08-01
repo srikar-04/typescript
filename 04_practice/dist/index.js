@@ -55,4 +55,22 @@ myArray = [1, 2, 3, 4];
 myArray = ['1', '2', '3', '4'];
 myArray = ['1', '2', 3, 4];
 // myArray_2 = ['1', '2', 3, 4]
+// MOVING TOWARDS CLASSES :
+class Point {
+    constructor() {
+        this.x = 0;
+        this.y = 0;
+    }
+}
+const pointObject = new Point();
+pointObject.x = 25;
+// pointObject.y = 'srikar'
+class PointInitialize {
+    constructor() {
+        this.x = 25;
+        this.y = 50;
+    }
+}
+// CLASSES HAVE STRICT PROPERTY INITIALIZATION RULE
+// either they should be initialized while defining the filed or in the constructor
 //# sourceMappingURL=index.js.map
