@@ -124,3 +124,56 @@ class PointInitialize {
 
 // CLASSES HAVE STRICT PROPERTY INITIALIZATION RULE
 // either they should be initialized while defining the filed or in the constructor
+
+
+class TestClass {
+    constructor(
+        public email:string, 
+        public user_id:number|string, 
+        public name:string,
+        private db_id: string | number,
+        readonly subscribers: number
+    ) {
+        console.log(db_id);   
+    }
+
+    set setDbId(newDbId: string | number) {
+        this.db_id = newDbId
+    }
+
+    get getDbId(): string | number {
+        return this.db_id
+    }
+}
+
+const test = new TestClass('srikar@gmail.com', 1234, 'srikar', ';laskdjf;lajsdf', 326)
+
+console.log(test.subscribers);
+
+
+// using protected for getting access in multiple classes : 
+
+class Animal {
+    constructor (
+        public type: string,
+        protected price: number
+    ) {
+
+    }
+}
+
+class Dog extends Animal {
+    constructor (
+        public type: string,
+        public price: number,
+        public breed: string
+    ) {
+        super(
+            type, 
+            price
+        )
+        console.log(this.price);
+    }
+}
+
+const dog = new Dog('animal', 4500, 'idk')
