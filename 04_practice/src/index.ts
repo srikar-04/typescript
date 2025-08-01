@@ -29,7 +29,7 @@ nums_2.push(3)
 
 console.log(nums_1);
 
-
+// functions using objects
 type ObjectTesting = {
     x: number,
     y?: number
@@ -40,3 +40,29 @@ function pointTest(pt: ObjectTesting) {
 }
 
 pointTest({x: 5})
+
+// UNION TYPES: 
+
+// below "variable" can be of type sting or it can be of type number. But be aware while performing operations on them because they may return error
+function test_2(
+    variable: 
+    | string 
+    | number
+) {
+    if (typeof(variable) == "string") {
+        variable.toLowerCase()
+    }
+    return variable
+}
+
+console.log(test_2('srikar'))
+
+interface obj {
+    number: number,
+    string: string
+}
+
+const obj = {
+    number: 0,
+    string: 'hello world'
+}
